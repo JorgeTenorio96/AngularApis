@@ -1,0 +1,7 @@
+<ul *ngFor="let pokemon of listPokemon">
+  <li>{{pokemon.name}}</li>
+  <img [src]="obtenerImagen(pokemon)"/>
+  <li>
+    <button mat-raised-button (click)="mostrarDetalle(pokemon)">Pick one</button>
+  </li>
+</ul>
